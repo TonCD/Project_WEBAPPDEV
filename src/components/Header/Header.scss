@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    height: max-content;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        .text {
+            color: white;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .icon {
+            width: 1.2rem;
+            filter: invert(100%);
+            margin-right: 5px;
+        }
+    }
+
+}
+
