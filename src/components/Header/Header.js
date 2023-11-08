@@ -100,7 +100,7 @@ const Header = (props) => {
                     <div className="col-4">
                         <div class="input-group">
                             <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                            <button type="button" class="btn btn-primary"><i class="bi bi-search"></i> </button>
+                            <button type="button" class="btn btn-outline-light"><i class="bi bi-search"></i> </button>
                         </div>
 
                     </div>

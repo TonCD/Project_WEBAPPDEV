@@ -20,6 +20,17 @@
             margin-right: 5px;
         }
     }
+    .form-control {
+        background-color: transparent;
+    }
+    .form-control::placeholder {
+        color: white;
+    }
+    .btn-outline-light {
+        background-color: transparent;
+    }
+    
 
 }
+
 
