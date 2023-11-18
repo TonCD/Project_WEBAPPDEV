@@ -1,7 +1,33 @@
 
 import './Header.scss'
 import { useState } from "react";
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo.png";
+
+function Cart(props) {
+    return (
+        <>
+            <button
+                variant="outline-secondary"
+                size="sm"
+                className="d-flex align-items-center pt-2 pb-2 fs-5 border rounded p-2"
+                style={{ backgroundColor: "transparent", color: 'white' }}
+            >
+                <i class="bi bi-cart me-3"></i>
+                Cart
+                <span className="ms-3 text-center" style={{
+                    width: "20px",
+                    height: "25px",
+                    borderRadius: "10px",
+                    background: "yellow",
+                    color: "#000",
+                    fontWeight: "700",
+                    fontSize: "15px",
+                    lineHeight: "25px",
+                }}>{props.value}</span>
+            </button>
+        </>
+    );
+}
 const BUTTONSTYLE = {
     width: "fit-content",
     padding: "0",
@@ -78,37 +104,61 @@ const Header = (props) => {
                     borderBottom: "1px solid #ccc",
                 }}
             >
-                <div className="container" style={{ height: "100px" }}>
+                <div className="container justify-content-around justify-content-xl-between" style={{ height: "100px" }}>
                     {/* Logo */}
-                    <div className="d-none d-md-block">
+                    <div className="d-none d-xl-block d- col-4">
                         <img
                             src={Logo}
                             alt="Logo"
                             style={{ width: "400px" }}
                         />
                     </div>
-
-                    {/* Menu Drawer (Mobile) */}
-                    <div className="d-block d-md-none">
-                        {/* MenuDrawer component */}
-                        <button className="btn">
-                            <i className="bi bi-list fs-3"></i>
-                        </button>
-                    </div>
+                    {/* NAV ở đây */}
 
                     {/* Search Field */}
-                    <div className="col-4">
-                        <div class="input-group">
-                            <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                            <button type="button" class="btn btn-outline-light"><i class="bi bi-search"></i> </button>
+                    <div className="col-4 mx-3">
+                        <div className="input-group">
+                            <input type="search" className="form-control" style={{
+                                backgroundColor: 'transparent',
+                                color: 'white'
+                            }} placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" className="btn btn-outline-light"><i className="bi bi-search"></i> </button>
                         </div>
 
                     </div>
 
-                    <div className='col-4'></div>
+                    <div className='d-none d-xl-flex'>
+                        <div className='d-flex justify-content-center  align-items-center ms-2' >
+                            <i className="bi bi-person-circle fs-4"></i>
+                            <button type="button" className='login-container btn btn-link text-light' >
+                                Sign In
+                            </button>
+                            /
+                            <button type="button" className='register-container btn btn-link text-light'>
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
 
-
+                    <div className='d-md-flex d-none justify-content-around'>
+                        <Cart value="0" />
+                    </div>
                 </div>
+                <nav class="container navbar navbar-expand-xl">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
 

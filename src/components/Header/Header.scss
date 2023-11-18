@@ -22,6 +22,7 @@
     }
     .form-control {
         background-color: transparent;
+        color: white;
     }
     .form-control::placeholder {
         color: white;
@@ -29,7 +30,10 @@
     .btn-outline-light {
         background-color: transparent;
     }
-    
+    input {
+        background-color: transparent;
+        color: white;
+    }
 
 }
 
