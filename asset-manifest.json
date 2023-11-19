@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Project_WEBAPPDEV/static/css/main.0627d0c6.css",
+    "main.js": "/Project_WEBAPPDEV/static/js/main.149eb2f6.js",
+    "static/js/787.fdb54331.chunk.js": "/Project_WEBAPPDEV/static/js/787.fdb54331.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/Project_WEBAPPDEV/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
+    "static/media/bootstrap-icons.woff2?": "/Project_WEBAPPDEV/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
+    "static/media/logo.png": "/Project_WEBAPPDEV/static/media/logo.4fd8027cf09cd611bef4.png",
+    "index.html": "/Project_WEBAPPDEV/index.html",
+    "main.0627d0c6.css.map": "/Project_WEBAPPDEV/static/css/main.0627d0c6.css.map",
+    "main.149eb2f6.js.map": "/Project_WEBAPPDEV/static/js/main.149eb2f6.js.map",
+    "787.fdb54331.chunk.js.map": "/Project_WEBAPPDEV/static/js/787.fdb54331.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0627d0c6.css",
+    "static/js/main.149eb2f6.js"
+  ]
+}
