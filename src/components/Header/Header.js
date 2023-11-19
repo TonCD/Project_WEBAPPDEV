@@ -3,6 +3,8 @@ import { useState, useRef } from "react";
 import Logo from "../../assets/logo.png";
 import Login from "../Login/Login.js";
 import "../Login/Login.scss";
+import Register from "../Register/Register.js";
+import "../Register/Register.scss"
 
 function Cart(props) {
   return (
@@ -75,10 +77,8 @@ const Header = (props) => {
   };
 
   const loginModalRef = useRef();
+  const registerModalRef = useRef();
 
-    const handleShowLoginModal = () => {
-        loginModalRef.current.show();
-    };
   return (
     <div
       className="header"
@@ -175,28 +175,30 @@ const Header = (props) => {
             <div className="d-flex justify-content-center  align-items-center ms-2">
               <i className="bi bi-person-circle fs-4"></i>
               <div className="modal-login">
-              <button
-                type="button"
-                className="login-container btn btn-link text-light"
-                data-bs-toggle="modal"
-                data-bs-target="#LoginModal"
-                onClick={handleShowLoginModal}
-              >
-                Sign In
-              </button>
-              <Login ref={loginModalRef} />
-
-              /
-              <button
-                type="button"
-                className="register-container btn btn-link text-light"
-                data-bs-dismiss="modal"
-              >
-                Sign Up
-              </button>
+                <button
+                  type="button"
+                  className="login-container btn btn-link text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#LoginModal"
+                >
+                  Sign In
+                </button>
+                /
+                <button
+                  type="button"
+                  className="register-container btn btn-link text-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#RegisterModal"
+                >
+                  Sign Up
+                </button>
               </div>
               {/* Modal Login */}
             </div>
+          </div>
+          <div className="modal-login">
+            <Login ref={loginModalRef} />
+            <Register ref={registerModalRef} />
           </div>
 
           <div className="d-md-flex d-none justify-content-around">
@@ -218,63 +220,66 @@ const Header = (props) => {
         </div>
         {/* Modal Login */}
         <div className="modal-menu">
-        <div
-          className="modal fade"
-          id="navbModal"
-          tabIndex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-          data-bs-dismiss="modal"
-        >
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header d-flex">
-                <img src={Logo} alt="Logo" className="col-11" />
-                <button
-                  type="button"
-                  className="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <i className="bi bi-x"></i>
-                </button>
-              </div>
-              <div className="modal-body">
-                <div className="modal-line">
-                  <i className="bi bi-house-door-fill"></i>
-                  <a href="/">Home</a>
-                </div>
-                <div className="modal-line">
-                  <i className="bi bi-file-earmark-text-fill"></i>
-                  <a href="/news">News</a>
-                </div>
-                <div className="modal-line">
-                  <i className="bi bi-telephone-fill"></i>
-                  <a href="/contact">Contact</a>
-                </div>
-                <div className="d-flex justify-content-center  align-items-center">
-                  <i className="bi bi-person-circle fs-4"></i>
+          <div
+            className="modal fade"
+            id="navbModal"
+            tabIndex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+            data-bs-dismiss="modal"
+          >
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header d-flex">
+                  <img src={Logo} alt="Logo" className="col-11" />
                   <button
                     type="button"
-                    className="login-container btn btn-link text-light"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
                   >
-                    Sign In
-                  </button>
-                  /
-                  <button
-                    type="button"
-                    className="register-container btn btn-link text-light"
-                  >
-                    Sign Up
+                    <i className="bi bi-x"></i>
                   </button>
                 </div>
+                <div className="modal-body">
+                  <div className="modal-line">
+                    <i className="bi bi-house-door-fill"></i>
+                    <a href="/">Home</a>
+                  </div>
+                  <div className="modal-line">
+                    <i className="bi bi-file-earmark-text-fill"></i>
+                    <a href="/news">News</a>
+                  </div>
+                  <div className="modal-line">
+                    <i className="bi bi-telephone-fill"></i>
+                    <a href="/contact">Contact</a>
+                  </div>
+                  <div className="d-flex justify-content-center  align-items-center">
+                    <i className="bi bi-person-circle fs-4"></i>
+                    <button
+                      type="button"
+                      className="login-container btn btn-link text-light"
+                      data-bs-toggle="modal"
+                      data-bs-target="#LoginModal"
+                    >
+                      Sign In
+                    </button>
+                    /
+                    <button
+                      type="button"
+                      className="register-container btn btn-link text-light"
+                      data-bs-toggle="modal"
+                      data-bs-target="#RegisterModal"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+                <div className="mobile-modal-footer"></div>
               </div>
-              <div className="mobile-modal-footer"></div>
             </div>
           </div>
         </div>
-        </div>
-
       </div>
     </div>
   );
