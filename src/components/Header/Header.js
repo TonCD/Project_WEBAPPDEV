@@ -5,6 +5,7 @@ import Login from "../Login/Login.js";
 import "../Login/Login.scss";
 import Register from "../Register/Register.js";
 import "../Register/Register.scss"
+import { useNavigate } from "react-router-dom";
 
 function Cart(props) {
   return (
@@ -75,10 +76,12 @@ const Header = (props) => {
     const numShow = Inf - 1 < 0 ? TIPS.length - 1 : Inf - 1;
     return setInf(numShow);
   };
-
+  const navigate = useNavigate();
   const loginModalRef = useRef();
   const registerModalRef = useRef();
-
+  const Home = () => {
+    navigate("/Project_WEBAPPDEV");
+  }
   return (
     <div
       className="header"
@@ -138,7 +141,7 @@ const Header = (props) => {
         >
           {/* Logo */}
           <div className="d-none d-xl-block d- col-4">
-            <img src={Logo} alt="Logo" style={{ width: "400px" }} />
+            <img src={Logo} alt="Logo" style={{ width: "400px" }}/>
           </div>
           {/* NAV ở đây */}
           <div className="mobile-toggler d-xl-none">
@@ -208,13 +211,13 @@ const Header = (props) => {
         <div className="container">
           <div className="navb-items d-none d-xl-flex">
             <div className="item">
-              <a href="/">Home</a>
+              <a href="/Project_WEBAPPDEV">Home</a>
             </div>
             <div className="item">
-              <a href="/news">News</a>
+              <a href="/Project_WEBAPPDEV/news">News</a>
             </div>
             <div className="item">
-              <a href="/about">Contact</a>
+              <a href="/Project_WEBAPPDEV/about">Contact</a>
             </div>
           </div>
         </div>
@@ -231,7 +234,7 @@ const Header = (props) => {
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header d-flex">
-                  <img src={Logo} alt="Logo" className="col-11" />
+                  <img src={Logo} alt="Logo" className="col-11" onClick={Home}/>
                   <button
                     type="button"
                     className="btn-close"
@@ -244,15 +247,15 @@ const Header = (props) => {
                 <div className="modal-body">
                   <div className="modal-line">
                     <i className="bi bi-house-door-fill"></i>
-                    <a href="/">Home</a>
+                    <a href="/Project_WEBAPPDEV">Home</a>
                   </div>
                   <div className="modal-line">
                     <i className="bi bi-file-earmark-text-fill"></i>
-                    <a href="/news">News</a>
+                    <a href="/Project_WEBAPPDEV/news">News</a>
                   </div>
                   <div className="modal-line">
                     <i className="bi bi-telephone-fill"></i>
-                    <a href="/contact">Contact</a>
+                    <a href="/Project_WEBAPPDEV/contact">Contact</a>
                   </div>
                   <div className="d-flex justify-content-center  align-items-center">
                     <i className="bi bi-person-circle fs-4"></i>

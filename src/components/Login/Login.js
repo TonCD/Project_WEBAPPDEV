@@ -1,6 +1,5 @@
 import "./Login.scss";
-import React, { forwardRef, useImperativeHandle, useState, useRef } from 'react';
-import Register from "../Register/Register.js";
+import React, { forwardRef, useImperativeHandle, useState} from 'react';
 const Login = forwardRef((props, ref) => {
     const [isModalVisible, setModalVisible] = useState(false);
 
