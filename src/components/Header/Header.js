@@ -131,9 +131,6 @@ const Header = (props) => {
       </div>
       <div
         className="pt-2"
-        style={{
-          borderBottom: "1px solid #ccc",
-        }}
       >
         <div
           className="container justify-content-around justify-content-xl-between"

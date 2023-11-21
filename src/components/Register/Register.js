@@ -36,7 +36,7 @@ const Register = forwardRef((props, ref) => {
                                             Thanks for chosing us
                                         </div>
                                         <div className="d-flex justify-content-center">
-                                            <img src="https://salt.tikicdn.com/ts/upload/eb/f3/a3/25b2ccba8f33a5157f161b6a50f64a60.png" />
+                                            <img src="https://salt.tikicdn.com/ts/upload/eb/f3/a3/25b2ccba8f33a5157f161b6a50f64a60.png" alt=""/>
                                         </div>
                                     </div>
                                     <div className="content-right col-sm-7 col-12 d-flex flex-column gap-3 py-3">
