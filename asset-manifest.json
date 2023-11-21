@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Project_WEBAPPDEV/static/css/main.c17f385e.css",
-    "main.js": "/Project_WEBAPPDEV/static/js/main.5aeb94a7.js",
+    "main.css": "/Project_WEBAPPDEV/static/css/main.b03fdb2b.css",
+    "main.js": "/Project_WEBAPPDEV/static/js/main.02585f49.js",
     "static/js/787.fdb54331.chunk.js": "/Project_WEBAPPDEV/static/js/787.fdb54331.chunk.js",
     "static/media/bootstrap-icons.woff?": "/Project_WEBAPPDEV/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
     "static/media/bootstrap-icons.woff2?": "/Project_WEBAPPDEV/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
-    "static/media/logo.png": "/Project_WEBAPPDEV/static/media/logo.4fd8027cf09cd611bef4.png",
+    "static/media/logo.png": "/Project_WEBAPPDEV/static/media/logo.a79ae08514752cc2a29b.png",
     "index.html": "/Project_WEBAPPDEV/index.html",
-    "main.c17f385e.css.map": "/Project_WEBAPPDEV/static/css/main.c17f385e.css.map",
-    "main.5aeb94a7.js.map": "/Project_WEBAPPDEV/static/js/main.5aeb94a7.js.map",
+    "main.b03fdb2b.css.map": "/Project_WEBAPPDEV/static/css/main.b03fdb2b.css.map",
+    "main.02585f49.js.map": "/Project_WEBAPPDEV/static/js/main.02585f49.js.map",
     "787.fdb54331.chunk.js.map": "/Project_WEBAPPDEV/static/js/787.fdb54331.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c17f385e.css",
-    "static/js/main.5aeb94a7.js"
+    "static/css/main.b03fdb2b.css",
+    "static/js/main.02585f49.js"
   ]
 }
